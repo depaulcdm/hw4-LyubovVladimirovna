@@ -96,7 +96,7 @@
 	<!--
 	TODO: Make this target depend on the 'test' target.
 	-->
-	<target name="jar">depends="test">
+	<target name="jar" depends="test">
       <ivy:cachefileset setid="hello.runclasspath" conf="compile" />
       <jar destfile="${jar.file}" basedir="${classes.dir}">
 		<manifest>
