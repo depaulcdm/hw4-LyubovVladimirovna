@@ -53,7 +53,7 @@
 	<!--
 	TODO: Make this target depend on the 'compile' target.
 	-->
-	<target name="test-compile"> depends="compile">
+	<target name="test-compile" depends="compile">
 	  <mkdir dir="${classes.test.dir}"/>
 	  <javac srcdir="${src.test.dir}" destdir="${classes.test.dir}">
 	    <!--
